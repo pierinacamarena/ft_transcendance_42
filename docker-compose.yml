@@ -1,0 +1,46 @@
+services:
+  postgres_db:
+    container_name: db
+    image: postgres:latest
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - PGDATA=${PGDATA}
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - pgdata:${PGDATA}
+    env_file:
+      - .env
+    networks:
+      - tsd-net
+  backend:
+    container_name: backend
+    image: backend_image
+    build: ./backend
+    restart: unless-stopped
+    depends_on:
+      - postgres_db
+    ports:
+      - 3000:3000
+    networks:
+      - tsd-net
+  frontend:
+    container_name: frontend
+    image: frontend_image
+    build: ./frontend
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+        restart: true
+    ports:
+      - 8080:8080
+    networks:
+      - tsd-net
+
+networks:
+  tsd-net:
+
+volumes:
+  pgdata:

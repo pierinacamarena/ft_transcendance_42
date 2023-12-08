@@ -1,0 +1,84 @@
+/* ------------------------------ */
+/* #1 Éléments */
+/* #2 Forme */
+/* #3 Position */
+/* #4 Margin - Padding */
+/* #5 Animations */
+/* ------------------------------ */
+
+/* ---HOME----------------------- */
+.home {
+	/* #1 Éléments */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home>div {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/backgrounds/div-black2.png');
+	border: 6px double rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+
+	/* #2 Forme */
+	width: 350px;
+	height: 425px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.home>div h1 {
+	/* #1 Éléments */
+	font-size: 25px;
+
+	/* #3 Position */
+	position: absolute;
+	align-self: center;
+	top: 10px
+}
+
+.home-character {
+	/* #3 Position */
+	position: absolute;
+	translate: 0 -20px;
+}
+
+.home-swap-box {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/backgrounds/div-black2.png');
+	border-top: 2px solid rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* #2 Forme */
+	height: 90px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.home-swap-box div {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/backgrounds/button-black1-255x60.png');
+	border: 2px solid rgb(255, 255, 255);
+	display: flex;
+
+	/* #2 Forme */
+	width: 255px;
+	height: 60px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.home-characters-link {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/text/characters.png');
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* #3 Position */
+	z-index: 1;
+}

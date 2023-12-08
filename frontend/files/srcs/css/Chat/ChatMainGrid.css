@@ -1,0 +1,62 @@
+@import url("ContactInfo.css");
+@import url("ChatBox.css");
+@import url("ManageRooms.css");
+@import url("DirectMessages.css");
+@import url("ManageChannels.css");
+@import url("ChannelCreate.css");
+@import url("SelectedContactInfo.css");
+@import url("MemberActions.css");
+@import url("HeaderContactInfo.css");
+
+.chat-main-grid {
+    padding-top: 6px;
+    display: grid;
+    grid-template-columns: 1.1fr 3fr 1fr;
+    gap: 1px;
+    height: 99%;
+    transition: grid-template-columns 0.4s;
+    background-color: rgba(66, 195, 217, 0.6);
+    overflow-y: hidden;
+}
+
+.chat-main-grid.close {
+    grid-template-columns: 1.1fr 4fr 0fr;
+}
+
+.custom-toast {
+    backdrop-filter: blur(25px);
+    background-color: rgba(46, 19, 216, 0.6) !important;
+    font-family: sans-serif !important;
+    font-size: 18px !important;
+}
+
+.custom-toast .Toastify__toast-body > div {
+    font-family: sans-serif !important;
+    font-size: 18px !important;
+}
+
+.custom-toast-delete {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    backdrop-filter: blur(25px);
+    background-color: rgba(46, 19, 216, 0.6) !important;
+    font-family: sans-serif !important;
+    font-size: 18px !important;
+}
+
+.custom-toast-delete .Toastify__toast-body > div {
+    font-family: sans-serif !important;
+    font-size: 18px !important;
+}
+
+
+.chat-game-btn{
+    background: transparent;
+    border: solid;
+    border-radius: 10%;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 0 10px;
+    margin-top: 10px;
+}

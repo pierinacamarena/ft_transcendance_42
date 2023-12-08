@@ -1,0 +1,96 @@
+/*The column showing the contact info*/
+
+.chat-main-grid .contact-info {
+    display: grid;
+    grid-template-rows: 3fr 6fr;
+    border: 1px solid rgba(8, 7, 7, 0.176);
+    border-radius: 5px;
+    height: 100%;
+}
+
+.chat-main-grid .contact-info .header-contact
+{
+    backdrop-filter: blur(25px);
+    display: grid;
+    grid-template-rows: minmax(0, min-content);
+    /* border: 1px solid rgb(121, 199, 245); */
+}
+
+.header-contact, .body-contact {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-main-grid .contact-info .body-contact
+{
+    border: 1px solid rgba(8, 7, 7, 0.176);
+    font-size: 18px;
+    backdrop-filter: blur(25px);
+    background-color: rgba(93, 13, 113, 0.1);
+    font-family: sans-serif;
+}
+
+.chat-info {
+    display: grid;
+    /* grid-template-rows: 0.4fr 0.3fr 0.3fr 3fr; */
+    grid-template-rows: repeat(auto-fill, minmax(50px, 5fr));
+    height: 100%;
+    overflow: auto;
+}
+
+
+.chat-info .members-title{
+    display: grid;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(47, 13, 48, 0.2);
+}
+
+.members-title h1 {
+    margin-top: 10%;
+    font-size: 18px;
+}
+
+.chat-info .conversation-info{
+    /* display: grid; */
+    /* grid-template-rows: minmax(0, min-content); */
+    align-items: start;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.conversation-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    height: 100%;
+    width: 100%;
+}
+
+.conversation-info .grow-child {
+    flex-grow: 1;
+}
+
+.chat-info .add-members-channel{
+    /* display: grid; */
+    align-content: center;
+    background-color: rgba(196, 18, 202, 0.0);
+    text-align: center;
+    height: 100%;
+    font-family: monospace;
+}
+
+.chat-info .leave-channel{
+    /* display: grid; */
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.0);
+    text-align: center;
+    height: 100%;
+    font-family: monospace;
+
+}

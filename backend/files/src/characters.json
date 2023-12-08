@@ -1,0 +1,102 @@
+{
+	"Boreas": {
+		"hp": 80,
+		"attack": 12,
+		"defense": 4,
+		"speed": 7,
+		"size": {
+			"width": 112,
+			"height": 140
+		}
+	},
+	"Helios": {
+		"hp": 80,
+		"attack": 12,
+		"defense": 3,
+		"speed": 8,
+		"size": {
+			"width": 112,
+			"height": 140
+		}
+	},
+	"Selene": {
+		"hp": 60,
+		"attack": 10,
+		"defense": 3,
+		"speed": 9,
+		"size": {
+			"width": 112,
+			"height": 126
+		}
+	},
+	"Liliana": {
+		"hp": 60,
+		"attack": 10,
+		"defense": 2,
+		"speed": 10,
+		"size": {
+			"width": 105,
+			"height": 126
+		}
+	},
+	"Thorian": {
+		"hp": 80,
+		"attack": 11,
+		"defense": 4,
+		"speed": 9,
+		"size": {
+			"width": 112,
+			"height": 126
+		}
+	},
+	"Rylan": {
+		"hp": 70,
+		"attack": 15,
+		"defense": 5,
+		"speed": 8,
+		"size": {
+			"width": 105,
+			"height": 126
+		}
+	},
+	"Garrick": {
+		"hp": 70,
+		"attack": 10,
+		"defense": 9,
+		"speed": 7,
+		"size": {
+			"width": 112,
+			"height": 133
+		}
+	},
+	"Orion": {
+		"hp": 70,
+		"attack": 11,
+		"defense": 0,
+		"speed": 11,
+		"size": {
+			"width": 112,
+			"height": 126
+		}
+	},
+	"Faeleen": {
+		"hp": 60,
+		"attack": 11,
+		"defense": 1,
+		"speed": 11,
+		"size": {
+			"width": 98,
+			"height": 126
+		}
+	},
+	"Test": {
+		"hp": 100,
+		"attack": 10,
+		"defense": 5,
+		"speed": 10,
+		"size": {
+			"width": 125,
+			"height": 125
+		}
+	}
+}

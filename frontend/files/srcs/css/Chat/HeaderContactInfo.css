@@ -1,0 +1,112 @@
+.header-contact .chat-info-photo {
+    justify-self: center;
+    background: transparent;
+}
+
+.chat-photo {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.header-contact .chat-name,
+.header-contact .chat-type,
+.header-contact .password-change {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    align-items: center;
+}
+
+.chat-name h3,
+.chat-type {
+    margin-right: 10px;
+}
+.header-contact .chat-name h3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.header-contact .chat-type,
+.header-contact .password-change {
+    font-size: 18px;
+}
+
+.chat-type-text{
+    margin-right: 10px;
+}
+
+.password-change-text {
+    margin-right: 10px;
+}
+
+.edit-btn {
+    background: transparent;
+}
+
+.dropdown {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.dropdown div{
+    font-size: 15px;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+/*Modal*/
+
+div.modal-chantype-psswd {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 30%;  
+    height: 30%; 
+    backdrop-filter: blur(25px);
+    background: rgba(0, 255, 0, 0.2);
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    font-size: 10px !important;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 2%;
+}
+
+.chantype-psswd{
+    display: grid;
+    height: 100%;
+}
+
+.chantype-psswd .title-chantype-psswd {
+    font-size: 45px !important;
+}
+
+.form-chantype-psswd form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-chantype-psswd form input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #fffafa;
+    background: transparent;
+    margin-bottom: 10px;
+}
+.chantype-word-btn{
+    background: transparent;
+    border: solid white;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 18px;
+    align-self: center;
+    font-family: sans-serif;
+}

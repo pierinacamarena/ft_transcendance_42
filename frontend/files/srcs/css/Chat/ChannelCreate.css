@@ -1,0 +1,268 @@
+
+/* 
+#1 Éléments
+#2 Forme
+#3 Position
+#4 Margin - Padding
+#5 Animations
+*/
+
+/*psswd setup*/
+
+div.modal-chan-psswd {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 40%;  
+    height: 30%; 
+    backdrop-filter: blur(25px);
+    background: rgba(0, 255, 0, 0.2);
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    font-size: 10px !important;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 2%;
+}
+
+.overlay-chan-psswd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.chan-psswd{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+}
+
+.chan-psswd .title-chan-psswd {
+    text-align: center;
+    place-items: center;
+    font-size: 18px;
+}
+
+.chan-psswd .form-chan-psswd {
+    /* display: flex; */
+    font-size: 18px;
+    align-items: center;
+}
+
+.chan-psswd .form-chan-psswd input{
+    background: transparent;
+    border: solid;
+    width: 95%;
+}
+
+.chan-psswd .close-chan-psswd {
+    font-size: 18px;
+}
+
+/*chan creation*/
+
+div.modal-chan-create {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 60%;  
+    height: 60%; 
+    /* background-color: rgb(33 9 153 / 75%); */
+    backdrop-filter: blur(25px);
+    background: rgba(0, 255, 0, 0.2);
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    font-size: 10px !important;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 2%;
+}
+
+.overlay-chan-create {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.chan-create-grid {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: 100%;
+    grid-auto-flow: row; 
+    font-size: 10px;
+}
+
+.chan-create-grid .create-title {
+    text-align: center;
+    place-items: center;
+    padding: 25px;
+}
+
+.modal-chan-create h2 {
+    font-size: 18px;
+}
+
+.chan-create-grid .create-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*
+Select channel name
+*/
+
+.chan-create-grid .create-form .create-name {
+    font-size: 10px; 
+}
+.chan-create-grid .create-form .create-name input{
+    font-size: 18px;
+    border: solid;
+    background: transparent;
+    width: 80%;
+    text-align: center;
+}
+
+.chan-create-grid .create-form .create-name input::placeholder{
+    color: rgb(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.chan-name-confirmation{
+    font-size: 15px;
+}
+
+/*
+Select channel members
+*/
+
+.chan-create-grid .create-form .select-members {
+    font-size: 10px;
+    display: grid;
+    grid-template-rows: 1fr 3.5fr;
+}
+
+.chan-create-grid .create-form .select-members input{
+    display: flex;
+    justify-self: center;
+    grid-row: 1;
+    font-size: 18px;
+    background: transparent;
+    border: solid;
+    width: 80%;
+}
+
+.chan-create-grid .create-form .select-members input::placeholder{
+    color: rgb(255, 255, 255, 0.8);
+    /* color: white; */
+    text-align: center;
+}
+
+.chan-create-grid .create-form .select-members .select-members-dropdown{
+    grid-row: 2;
+    text-align: center;
+    justify-self: center;
+    border: solid;
+}
+
+.chan-create-grid .create-form .select-members .select-members-dropdown-item{
+    /* border: solid; */
+    text-align: center;
+    font-size: 15px;
+}
+
+.chan-create-grid .create-form .select-members .select-members-dropdown-item.selected {
+    background-color: rgb(202, 1, 112);  /* Change this to your desired color */
+}
+
+/*
+Select channel type
+*/
+.chan-create-grid .create-form .select-type {
+    font-size: 10px;
+    display: grid;
+    grid-template-rows: max-content 3.5fr;
+    /* align-items: center; */
+}
+
+.channel-select {
+    /* color: black; */
+    background: transparent;
+  }
+  
+  .channel-select option {
+    color: black;
+    background: transparent;
+  }
+  
+
+.chan-create-grid .create-form .select-type select{
+    display: flex;
+    justify-self: center;
+    font-size: 18px;
+    background: transparent;
+    width: 80%;
+    text-align: center;
+    border: solid white;
+}
+
+.chan-create-grid .create-form .select-type .chan-password-input{
+    grid-row: 2;
+}
+
+.chan-create-grid .create-form .select-type .chan-password-input input{
+    font-size: 18px;
+    background: transparent;
+    border: solid;
+    width: 80%;
+    text-align: center;
+}
+
+.chan-create-grid .create-form .select-type .chan-password-input input::placeholder{
+    color: rgb(255, 255, 255, 0.8);
+    /* color: white; */
+}
+
+.chan-create-grid .create-form .select-type option{
+    font-size: 18px;
+    line-height: 30px !important;
+}
+
+.chan-create-grid .chan-create-submit {
+    text-align: center;
+    max-width: 100%;
+}
+
+/*
+Create channel final button
+*/
+
+.chan-show-btns{
+    display: flex;
+}
+.chan-create-btn{
+    background: transparent;
+    border: solid rgb(255, 255, 255);
+    font-size: 18px;
+    align-self: center;
+}
+
+.chan-show-btn{
+    background: transparent;
+    border: solid rgb(31, 28, 36);
+    font-size: 18px;
+    align-self: center;
+}
+
+.chan-show-btn.selected {
+    /* color: #4CAF50; */
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.channel-container.selected {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px 3px rgb(252, 252, 216);
+}

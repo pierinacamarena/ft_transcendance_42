@@ -1,0 +1,113 @@
+/*Column showing the actual chat, header, messages and text input*/
+
+.chat-main-grid .chatbox {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, Messages, Text Input */
+    height: 100vh;
+    backdrop-filter: blur(10px);
+}
+
+.chat-main-grid .chatbox .chat-header{
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.4);
+
+}
+
+.chat-header-btn{
+    border-radius: 50%;
+    background: rgba(255, 253, 253, 0.0);
+
+}
+.chat-header-photo{
+
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.chat-main-grid .chatbox .chat-messages{
+    border: 1px solid rgb(121, 199, 245, 0.1);
+    height: 100%;
+    white-space: break-spaces;
+    word-wrap: break-word;
+    /* display: flex;
+    flex-direction: column-reverse; */
+    overflow-y: auto;
+    scroll-behavior: auto;
+    padding-right: 6px;
+    padding-left: 3px;
+}
+
+
+.message{
+    font-size: 18px;
+}
+.message .message-user,
+.message .message-text {
+    line-height: 1.1;
+    font-size: 16px;
+    text-transform: initial;
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 5px;
+}
+
+
+.message.sent{
+    text-align: right;  
+    margin-left: auto;
+    max-width: 60%;
+    width: fit-content;
+}
+
+.message.received{
+    text-align: left;  
+    margin-right: auto;
+    max-width: 60%;
+    width: fit-content;
+}
+
+.message .message-user {
+    line-height: 1.1;
+    font-size: 16px;
+    color: black;
+    text-transform: initial;
+    font-family: sans-serif;
+    display: block;
+    padding: 5px;
+}
+
+.message .message-text {
+    /* line-height: 1.1; */
+    font-size: 16px;
+    text-transform: initial;
+    font-family: sans-serif;
+    backdrop-filter: blur(10px);
+    background: radial-gradient(80% 40%, rgba(18, 162, 173, 0.5), rgb(2, 88, 92, 0.5));
+    display: block;
+    padding: 12px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.message_user {
+    font-size: 19px;
+    color: black;
+}
+.chat-main-grid .chatbox .chat-input-text{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* .message p {
+    line-height: 1.1;
+    font-size: 16px;
+    text-transform: initial;
+    font-family: sans-serif;
+    display: inline;
+    background: rgb(2, 90, 255, 0.2);
+} */

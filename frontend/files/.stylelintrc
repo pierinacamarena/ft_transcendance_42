@@ -1,0 +1,18 @@
+{
+	"extends": "stylelint-config-standard",
+	"rules": {
+		"max-nesting-depth": 3,
+		"selector-class-pattern": "*",
+		"indentation": "tab",
+		"number-leading-zero": "always",
+		"color-named": "never",
+		"color-function-notation": null,
+		"alpha-value-notation": null,
+		"comment-empty-line-before": null,
+		"length-zero-no-unit": null,
+		"no-duplicate-selectors": true,
+		"property-no-unknown": true,
+		"shorthand-property-no-redundant-values": true,
+		"declaration-block-no-duplicate-properties": true
+	}
+}

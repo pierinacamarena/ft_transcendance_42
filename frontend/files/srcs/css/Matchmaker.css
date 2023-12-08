@@ -1,0 +1,123 @@
+/* ------------------------------ */
+/* #1 Éléments */
+/* #2 Forme */
+/* #3 Position */
+/* #4 Margin - Padding */
+/* #5 Animations */
+/* ------------------------------ */
+
+/* ---MATCHMAKER----------------- */
+.matchmaker {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/backgrounds/button-black1-255x100.png');
+	border: 3px solid rgb(80, 160, 255);
+
+	/* #2 Forme */
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+	/* #3 Position */
+	grid-row: 3 / 3;
+	z-index: 3;
+}
+
+.matchmaker-txt-play {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/text/play.png');
+}
+
+.matchmaker-txt-stop {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/text/stop.png');
+	font-size: 23px;
+
+	/* #4 Margin - Padding */
+	margin-top: 5px;
+	padding-top: 5px;
+}
+
+.matchmaker-txt-exit {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/text/exit.png');
+}
+
+/* ---GAME-INFOS----------------- */
+.gameInfos {
+	/* #1 Éléments */
+	background-color: rgb(0, 0, 0, 0.7);
+	border: 6px double rgb(210, 90, 110);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 2fr 1em 1fr 1fr;
+	align-items: center;
+	overflow: hidden;
+
+	/* #2 Forme */
+	border-radius: 10px;
+
+	/* #3 Position */
+	z-index: 3;
+
+	/* #4 Margin - Padding */
+	padding: 5px;
+}
+
+.gameInfo-playerHP {
+	/* #1 Éléments */
+	background-color: rgb(0, 0, 0, 0.7);
+	border: 2px solid rgb(210, 90, 110);
+
+	/* #2 Forme */
+	width: 100px;
+	height: 100px;
+
+	/* #3 Position */
+	align-self: flex-end;
+	justify-self: center;
+}
+
+.gameInfo-playerName {
+	/* #1 Éléments */
+	text-wrap: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-align: center;
+
+	/* #2 Forme */
+	max-width: 100%;
+	width: 100%;
+
+	/* #3 Position */
+	justify-self: center;
+
+	/* #4 Margin - Padding */
+	padding: 0 10px;
+}
+
+.gameInfo-score {
+	/* #1 Éléments */
+	font-size: 50px;
+	justify-self: center;
+}
+
+.gameInfo-score:nth-of-type(3) {
+	/* #4 Margin - Padding */
+	margin-left: 25px;
+}
+
+.gameInfo-score:nth-of-type(4) {
+	/* #4 Margin - Padding */
+	margin-right: 25px;
+}
+
+.gameInfo-timer {
+	/* #1 Éléments */
+	font-size: 42px;
+
+	/* #3 Position */
+	grid-column: 1 / -1;
+	justify-self: center;
+
+	/* #4 Margin - Padding */
+	margin-bottom: 10px;
+}

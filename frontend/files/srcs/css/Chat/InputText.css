@@ -1,0 +1,32 @@
+.input_text {
+    position: relative;
+}
+
+.input_text button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: rgba(255, 253, 253, 0.0);
+}
+
+.input_text {
+    height: 100px;
+    width: 100%;
+}
+
+.input_text input {
+    height: 100%;
+    /* 25 = button - 10 = button margin - 10 = this input padding */
+    /* All = 45 - rounded to 50 */
+    width: calc(100% - 50px);
+    border-radius: 0 10px 10px 0;
+    padding-left: 10px;
+    background: rgba(66, 104, 112, 0.3);
+    font-family: revert;
+}
+
+.input_text input::placeholder{
+    text-indent: 5px;
+    color: rgba(255, 255, 255, 0.6)
+}

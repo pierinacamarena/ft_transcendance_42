@@ -1,0 +1,248 @@
+/* ------------------------------ */
+/* #1 Éléments */
+/* #2 Forme */
+/* #3 Position */
+/* #4 Margin - Padding */
+/* #5 Animations */
+/* ------------------------------ */
+
+/* ---CHARACTERS----------------- */
+.characters {
+	/* #1 Éléments */
+	display: grid;
+	grid-template-columns: 1fr 450px;
+	grid-gap: 5px;
+	overflow: hidden;
+
+	/* #4 Margin - Padding */
+	padding: 10px;
+	padding-left: 0;
+}
+
+.characters-select {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/backgrounds/div-black2.png');
+	border: 6px double rgb(255, 255, 255);
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 250px);
+	grid-template-rows: repeat(auto-fill, 250px);
+	grid-gap: 30px;
+	justify-content: center;
+	overflow-x: hidden;
+
+	/* #2 Forme */
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+	/* #4 Margin - Padding */
+	padding: 60px;
+
+	/* #5 Animations */
+	transform-origin: right;
+}
+
+.characters-select>div {
+	/* #1 Éléments */
+	border: 3px solid rgb(255, 255, 255);
+	position: relative;
+
+	/* #2 Forme */
+	min-width: 250px;
+	min-height: 250px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.character-selectBox {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/backgrounds/div-black2.png');
+	border-top: 2px solid rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* #2 Forme */
+	width: 100%;
+	height: 60px;
+	border-bottom-left-radius: 5px;
+
+	/* #3 Position */
+	position: absolute;
+	z-index: 1;
+	translate: 0 -60px;
+}
+
+.character-selectBox button {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/backgrounds/button-black1-120x40.png');
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 17px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* #2 Forme */
+	width: 120px;
+	height: 40px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.character-skin {
+	/* #1 Éléments */
+	background-size: auto;
+	background-repeat: no-repeat;
+	cursor: pointer;
+
+	/* #2 Forme */
+	width: 100%;
+	height: 100%;
+}
+
+.character-skin-Boreas {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/characters/boreas.png');
+}
+
+.character-skin-Helios {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/characters/helios.png');
+}
+
+.character-skin-Selene {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/characters/selene.png');
+}
+
+.character-skin-Liliana {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/characters/liliana.png');
+}
+
+.character-skin-Orion {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/characters/orion.png');
+}
+
+.character-skin-Faeleen {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/characters/faeleen.png');
+}
+
+.character-skin-Rylan {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/characters/rylan.png');
+}
+
+.character-skin-Garrick {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/characters/garrick.png');
+}
+
+.character-skin-Thorian {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/characters/thorian.png');
+}
+
+/* ---CHARACTER------------------ */
+.character {
+	/* #1 Éléments */
+	display: grid;
+	grid-template-rows: auto 200px 150px;
+	grid-gap: 5px;
+	overflow: hidden;
+}
+
+.character-story {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/backgrounds/div-black2.png');
+	border: 6px double rgb(255, 255, 255);
+	border-bottom: 2px solid rgb(255, 255, 255);
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	overflow-y: auto;
+
+	/* #2 Forme */
+	border-top-right-radius: 10px;
+
+	/* #4 Margin - Padding */
+	padding: 15px;
+}
+
+.character-story * {
+	/* #1 Éléments */
+	font-size: 25px;
+	text-align: center;
+}
+
+.character-story>div h1 {
+	/* #1 Éléments */
+	font-size: 30px;
+	text-align: center;
+
+	/* #4 Margin - Padding */
+	margin-bottom: 15px;
+}
+
+.character-stats {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/backgrounds/div-black2.png');
+	border: 6px double rgb(255, 255, 255);
+	border-top: 2px solid rgb(255, 255, 255);
+	border-bottom: 2px solid rgb(255, 255, 255);
+
+	/* #4 Margin - Padding */
+	padding: 15px;
+}
+
+.character-stats>div {
+	/* #1 Éléments */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	align-items: center;
+
+	/* #2 Forme */
+	width: 100%;
+	height: 100%;
+}
+
+.character-stats>div * {
+	/* #1 Éléments */
+	font-size: 40px;
+	text-align: center;
+}
+
+/* ---CHARACTER-SPELLS----------- */
+.character-spells {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/backgrounds/div-black2.png');
+	border: 6px double rgb(255, 255, 255);
+	border-top: 2px solid rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	/* #2 Forme */
+	border-bottom-right-radius: 10px;
+
+	/* #3 Position */
+	grid-column: 1 / -1;
+
+	/* #4 Margin - Padding */
+	padding: 15px;
+}
+
+.character-spell h1 {
+	/* #1 Éléments */
+	text-align: center;
+	font-size: 30px;
+}
+
+.character-spell p {
+	/* #1 Éléments */
+	text-align: center;
+	font-size: 25px;
+}

@@ -1,0 +1,298 @@
+/* ------------------------------ */
+/* #1 Éléments */
+/* #2 Forme */
+/* #3 Position */
+/* #4 Margin - Padding */
+/* #5 Animations */
+/* ------------------------------ */
+
+/* ---FRIENDS-------------------- */
+.profile-friends {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/backgrounds/div-black2.png');
+	border: 6px double rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+
+	/* #2 Forme */
+	border-radius: 10px;
+
+	/* #4 Margin - Padding */
+	margin: 10px;
+	margin-left: 0;
+}
+
+/* ---FRIENDS-HEAD--------------- */
+.profile-friends-head {
+	/* #1 Éléments */
+	border-bottom: 3px solid rgb(255, 255, 255);
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-end;
+
+	/* #4 Margin - Padding */
+	padding: 10px;
+}
+
+.profile-friends-head form input {
+	/* #1 Éléments */
+	border: 2px solid rgb(255, 255, 255);
+
+	/* #2 Forme */
+	height: 40px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.profile-friends-head form button {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/backgrounds/button-black1-70x40.png');
+	border: 2px solid rgb(255, 255, 255);
+
+	/* #2 Forme */
+	width: 70px;
+	height: 40px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+	/* #4 Margin - Padding */
+	margin-left: 5px;
+}
+
+.profile-friends-submit-log {
+	/* #1 Éléments */
+	background-color: rgb(182, 50, 95);
+	border: 2px solid rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* #2 Forme */
+	height: 40px;
+	border-radius: 5px;
+
+	/* #4 Margin - Padding */
+	margin-right: 5px;
+	padding: 0 10px;
+}
+
+.profile-friends-submit-log--green {
+	/* #1 Éléments */
+	background-color: rgb(110, 210, 90);
+}
+
+/* ---FRIENDS-LIST--------------- */
+.profile-friends-list {
+	/* #1 Éléments */
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	/* #2 Forme */
+	height: 100%;
+}
+
+.profile-friends-noFriends-txt {
+	/* #1 Éléments */
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* #2 Forme */
+	width: 100%;
+
+	/* #3 Position */
+	translate: 0 300px;
+}
+
+.profile-friends-list-head {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/backgrounds/div-black1.png');
+	border-bottom: 3px solid rgb(255, 255, 255);
+	display: flex;
+
+	/* #2 Forme */
+	height: 55px;
+
+	/* #3 Position */
+	position: sticky;
+	z-index: 1;
+	top: 0;
+}
+
+.profile-friends-list-col {
+	/* #1 Éléments */
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	/* #2 Forme */
+	width: 14%;
+	height: 100%;
+}
+
+.profile-friends-list-col:first-child {
+	/* #2 Forme */
+	width: 25%;
+	min-width: 225px;
+}
+
+.profile-friends-list-col:nth-child(2) {
+	/* #2 Forme */
+	min-width: 120px;
+}
+
+.profile-friends-list-col:last-child {
+	/* #2 Forme */
+	width: 19%;
+}
+
+.profile-friends-list-col--bigFont {
+	/* #1 Éléments */
+	font-size: 34px;
+}
+
+/* ---FRIEND-SEARCH-------------- */
+.profile-friends-search {
+	/* #1 Éléments */
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* #2 Forme */
+	width: 100%;
+	height: 100%;
+}
+
+.profile-friends-search-btn {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/buttons/search.png');
+	border: 2px solid rgb(255, 255, 255);
+
+	/* #2 Forme */
+	width: 50px;
+	height: 40px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+	/* #3 Position */
+	position: absolute;
+	right: 10px;
+}
+
+.profile-friends-search-btn--active {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/buttons/x.png');
+}
+
+.profile-friends-search-input {
+	/* #1 Éléments */
+	border: 2px solid rgb(255, 255, 255);
+
+	/* #2 Forme */
+	width: calc(100% - 70px);
+	height: 40px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+	/* #3 Position */
+	position: absolute;
+	left: 5px;
+
+	/* #5 Animations */
+	transform-origin: right;
+}
+
+/* ---FRIEND--------------------- */
+.profile-friend {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/backgrounds/div-black2.png');
+	border-bottom: 2px solid rgb(255, 255, 255);
+	display: flex;
+
+	/* #2 Forme */
+	height: 80px;
+}
+
+.profile-friend-linkBox {
+	/* #1 Éléments */
+	position: relative;
+
+	/* #2 Forme */
+	width: 25%;
+	min-width: 225px;
+}
+
+.profile-friend link {
+	/* #1 Éléments */
+	justify-content: flex-start;
+	cursor: pointer;
+}
+
+.profile-friend-pic {
+	/* #1 Éléments */
+	border: 2px solid rgb(255, 255, 255);
+
+	/* #2 Forme */
+	width: 65px;
+	height: 65px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+	/* #4 Margin - Padding */
+	margin-left: 5px;
+}
+
+.profile-friend-name {
+	/* #1 Éléments */
+	font-size: 24px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+	/* #2 Forme */
+	width: calc(100% - 85px);
+
+	/* #4 Margin - Padding */
+	padding-left: 15px;
+}
+
+.profile-friend-name:hover {
+	/* #1 Éléments */
+	overflow: visible;
+
+	/* #3 Position */
+	position: relative;
+	z-index: 1;
+}
+
+.profile-friend-name h1 {
+	/* #1 Éléments */
+	font-size: 22px;
+}
+
+.profile-friend-name p {
+	/* #1 Éléments */
+	font-size: 18px;
+}
+
+.profile-friend-del-btn {
+	/* #1 Éléments */
+	background-image: url('../resources/assets/ui/buttons/x.png');
+	border: 2px solid rgb(255, 255, 255);
+
+	/* #2 Forme */
+	width: 50px;
+	height: 40px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+	/* #3 Position */
+	position: absolute;
+	z-index: 2;
+	top: 20px;
+	right: 10px;
+}
